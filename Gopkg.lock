@@ -2,12 +2,12 @@
 
 
 [[projects]]
-  digest = "1:f11e03e8297265765272534835027251cc808ed6dab124f5f5dbc37f7c908abb"
+  digest = "1:c5df3a7b173c2d0f8f8dff4afb67f6f9b16a27f20f30eae421b475b654950193"
   name = "github.com/Shopify/sarama"
   packages = ["."]
   pruneopts = ""
-  revision = "ec843464b50d4c8b56403ec9d589cf41ea30e722"
-  version = "v1.19.0"
+  revision = "b3a812117be917e2dd4f8cbcf4ff861e3ae7ef38"
+  version = "v1.26.1"
 
 [[projects]]
   branch = "master"
@@ -83,6 +83,39 @@
   packages = ["."]
   pruneopts = ""
   revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
+
+[[projects]]
+  digest = "1:d5e928ff735d055c7756e420d2bca5ec8a129fbc738c9f3fa43b65b67426c41a"
+  name = "github.com/hashicorp/go-uuid"
+  packages = ["."]
+  pruneopts = ""
+  revision = "6195a4f20692188e0a389def25559731d1e130f9"
+  version = "v1.0.2"
+
+[[projects]]
+  digest = "1:d45477e90c25c8c6d7d4237281167aa56079382fc042db4b44a8328071649bfa"
+  name = "github.com/jcmturner/gofork"
+  packages = [
+    "encoding/asn1",
+    "x/crypto/pbkdf2",
+  ]
+  pruneopts = ""
+  revision = "dc7c13fece037a4a36e2b3c69db4991498d30692"
+  version = "v1.0.0"
+
+[[projects]]
+  digest = "1:eb0bbb88a33a9c278221683bf9bd604b0b2906d6d647e19332a1afd0dfd33cbf"
+  name = "github.com/klauspost/compress"
+  packages = [
+    "fse",
+    "huff0",
+    "snappy",
+    "zstd",
+    "zstd/internal/xxhash",
+  ]
+  pruneopts = ""
+  revision = "e2d2089232ece4911272106ae65a7a06746ea38a"
+  version = "v1.10.4"
 
 [[projects]]
   digest = "1:6a874e3ddfb9db2b42bd8c85b6875407c702fa868eed20634ff489bc896ccfd3"
@@ -193,9 +226,24 @@
   branch = "master"
   digest = "1:f7be435e0ca22e2cd62b2d2542081a231685837170a87a3662abb7cdf9f3f1cd"
   name = "golang.org/x/crypto"
-  packages = ["ssh/terminal"]
+  packages = [
+    "md4",
+    "pbkdf2",
+    "ssh/terminal",
+  ]
   pruneopts = ""
   revision = "3d3f9f413869b949e48070b5bc593aa22cc2b8f2"
+
+[[projects]]
+  branch = "master"
+  digest = "1:5ee8059477435bc4ec344bfa2ba129566bd0bc8137d98af9ec9aa4ba8e5f1e4e"
+  name = "golang.org/x/net"
+  packages = [
+    "internal/socks",
+    "proxy",
+  ]
+  pruneopts = ""
+  revision = "d3edc9973b7eb1fb302b0ff2c62357091cea9a30"
 
 [[projects]]
   branch = "master"
@@ -217,6 +265,72 @@
   pruneopts = ""
   revision = "947dcec5ba9c011838740e680966fd7087a71d0d"
   version = "v2.2.6"
+
+[[projects]]
+  digest = "1:4777ba481cc12866b89aafb0a67529e7ac48b9aea06a25f3737b2cf5a3ffda12"
+  name = "gopkg.in/jcmturner/aescts.v1"
+  packages = ["."]
+  pruneopts = ""
+  revision = "f6abebb3171c4c1b1fea279cb7c7325020a26290"
+  version = "v1.0.1"
+
+[[projects]]
+  digest = "1:84c5b1392ef65ad1bb64da4b4d0beb2f204eefc769d6d96082347bb7057cb7b1"
+  name = "gopkg.in/jcmturner/dnsutils.v1"
+  packages = ["."]
+  pruneopts = ""
+  revision = "13eeb8d49ffb74d7a75784c35e4d900607a3943c"
+  version = "v1.0.1"
+
+[[projects]]
+  digest = "1:75b95137454f306ccb36052ee6902730d746a64800ad56ed57f1e6d2c7b27784"
+  name = "gopkg.in/jcmturner/gokrb5.v7"
+  packages = [
+    "asn1tools",
+    "client",
+    "config",
+    "credentials",
+    "crypto",
+    "crypto/common",
+    "crypto/etype",
+    "crypto/rfc3961",
+    "crypto/rfc3962",
+    "crypto/rfc4757",
+    "crypto/rfc8009",
+    "gssapi",
+    "iana",
+    "iana/addrtype",
+    "iana/adtype",
+    "iana/asnAppTag",
+    "iana/chksumtype",
+    "iana/errorcode",
+    "iana/etypeID",
+    "iana/flags",
+    "iana/keyusage",
+    "iana/msgtype",
+    "iana/nametype",
+    "iana/patype",
+    "kadmin",
+    "keytab",
+    "krberror",
+    "messages",
+    "pac",
+    "types",
+  ]
+  pruneopts = ""
+  revision = "0b0d9d762bbc834e1e14f3f39dcea984364e9d63"
+  version = "v7.5.0"
+
+[[projects]]
+  digest = "1:f9956ccc103c6208cd50c71ee5191b6fdcc635972c12624ef949c9b20b2bb9d1"
+  name = "gopkg.in/jcmturner/rpc.v1"
+  packages = [
+    "mstypes",
+    "ndr",
+  ]
+  pruneopts = ""
+  revision = "99a8ce2fbf8b8087b6ed12a37c61b10f04070043"
+  version = "v1.1.0"
 
 [solve-meta]
   analyzer-name = "dep"
